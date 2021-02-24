@@ -11,6 +11,9 @@
         <!-- Agregar ícono de favoritos -->
         <link rel="icon" href="img/favicon.png">
 
+        <!-- Meta que permite la correcta visualización en Responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <!-- Cargar librería de Íconos Web > Font Awesome Icons -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
@@ -44,9 +47,9 @@
             </a>
 
             <nav>
-                <a href="#empresa">About</a>
-                <a href="servicios">Services</a>
-                <a href="#superior-footer">Contact Us</a>
+                <a href="#ancla-empresa">About</a>
+                <a href="#ancla-servicios">Services</a>
+                <a href="#ancla-footer">Contact Us</a>
             </nav>
         </aside>
 
@@ -60,9 +63,9 @@
                 </figure>
 
                 <nav>
-                    <a href="#empresa">About</a>
-                    <a href="servicios">Services</a>
-                    <a href="#superior-footer">Contact Us</a>
+                    <a href="#ancla-empresa">About</a>
+                    <a href="#ancla-servicios">Services</a>
+                    <a href="#ancla-footer">Contact Us</a>
                 </nav>
             </article>
         </header>
@@ -70,6 +73,7 @@
         <main>
             <!-- Componente Presentación -->
             <section id="empresa">
+                <div id="ancla-empresa"></div>
                 <article>
                     <figure>
                         <img src="img/header.png">
@@ -78,37 +82,38 @@
                     <div id="info-empresa">
                         <h2>Multipurpose landing page</h2>
                         <h1>Beautifully, simple, code.</h1>
-                        <p>Lorem ipsum dolor sit amet ipsum dolor sit amet. Lorem ipsum dolor sit amet ipsum dolor sit amet. Lorem ipsum dolor sit amet ipsum dolor sit amet.</p>
-                        <a href="#servicios">Learn more</a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur suscipit tempus. Donec finibus nisl ac mi egestas ullamcorper.</p>
+                        <a href="https://www.instagram.com/dextco" target="_blank">Learn more</a>
                     </div>
                 </article>
             </section>
 
             <!-- Componente Servicios 4 Columnas -->
             <section id="servicios">
+                <div id="ancla-servicios"></div>
                 <article>
                     <figure>
                         <img src="img/strategy-1.png">
                         <h3>Strategy</h3>
-                        <p>Lorem ipsum dolor sit amet ipsum dolor sit amet. Lorem ipsum dolor sit amet ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet ipsum dolor sit amet.</p>
                     </figure>
 
                     <figure>
                         <img src="img/strategy-2.png">
                         <h3>Strategy</h3>
-                        <p>Lorem ipsum dolor sit amet ipsum dolor sit amet. Lorem ipsum dolor sit amet ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet ipsum dolor sit amet.</p>
                     </figure>
 
                     <figure>
                         <img src="img/strategy-3.png">
                         <h3>Strategy</h3>
-                        <p>Lorem ipsum dolor sit amet ipsum dolor sit amet. Lorem ipsum dolor sit amet ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet ipsum dolor sit amet.</p>
                     </figure>
 
                     <figure>
                         <img src="img/strategy-4.png">
                         <h3>Strategy</h3>
-                        <p>Lorem ipsum dolor sit amet ipsum dolor sit amet. Lorem ipsum dolor sit amet ipsum dolor sit amet.</p>
+                        <p>Lorem ipsum dolor sit amet ipsum dolor sit amet.</p>
                     </figure>
                 </article>
             </section>
@@ -116,6 +121,7 @@
 
         <!-- Componente Footer con 4 columnas -->
         <footer>
+            <div id="ancla-footer"></div>
             <article>
                 <div id="superior-footer">
                     <div class="cajas-footer">
@@ -136,7 +142,7 @@
                                 <span>123 Business Center London</span>
                             </a>
                             <a href="tel:+573146089813">
-                                <i class="fas fa-phone-alt"></i>
+                                <i class="fas fa-mobile"></i>
                                 <span>314 608 9813</span>
                             </a>
                             <a href="mailto:alberto.angulo@uac.edu.co" target="_blank">
@@ -174,6 +180,13 @@
         </footer>
 
         <!-- Zona de Scripts -->
+        <!-- 1°: LLamado a jQuery desde un CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <!-- 2°: Llamado a librerías hijo de jQuery -->
+        <!-- jQuery Easing desde CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
         <!-- Enlazar a archivo externo JS > script.js -->
         <script src="js/script.js"></script>
     </body>
